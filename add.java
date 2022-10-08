@@ -10,6 +10,6 @@ public class add{
 	
 	public static int sum(int a,int b){
 		System.out.println(a+b);
-		return 0;
+		return a+b;
 	}
 }
