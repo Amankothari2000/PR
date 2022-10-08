@@ -6,10 +6,11 @@ public class add{
 		Scanner sc = new Scanner(System.in);
 		a=sc.nextInt();
 		b=sc.nextInt();
+		System.out.println(sum(a+b));
 	}
 	
 	public static int sum(int a,int b){
-		System.out.println(a+b);
+// 		System.out.println(a+b);
 		return a+b;
 	}
 }
