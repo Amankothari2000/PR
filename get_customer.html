@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Get Customer</h1>
+    <h2 id = "tat"></h2>
+    <p id = "api_test">
+    </p>
+<script>
+var api = document.getElementById("api_test")
+const  startTime = new Date().getTime();
+fetch("http://localhost:3000/allCustomers", {
+     method: "get",
+     headers: {
+         "Content-type": "application/json; charset=UTF-8"
+     }
+ })
+    .then(response => response.json())
+    .then(json => {
+        api.innerHTML = JSON.stringify(json);
+        const endTime = new Date().getTime();
+        console.log(endTime - startTime);
+        const a =  endTime - startTime + " ms";
+        document.getElementById("tat").innerHTML = a;
+    });
+
+ 
+</script>
+</body>
+</html> 
