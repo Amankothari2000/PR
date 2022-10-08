@@ -8,7 +8,8 @@ public class add{
 		b=sc.nextInt();
 	}
 	
-	public static int sum(){
+	public static int sum(int a,int b){
 		System.out.println(a+b);
+		return 0;
 	}
 }
