@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Lab6 {
     public static void circleCircleIntersection(double x0, double y0, double r0, double x1, double y1, double r1){
+        //Declaring variables
         double a, dx, dy, d, h, rx, ry, xi, yi, xi_prime, yi_prime;
         double x2, y2;
 
