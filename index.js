@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-//added by mangalam pandey
 
 app.use(express.json());
 
